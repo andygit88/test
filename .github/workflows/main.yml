@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: andygit/test:latest
+          tags: andygit/test:tagname
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
